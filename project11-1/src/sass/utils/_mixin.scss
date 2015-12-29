@@ -1,0 +1,43 @@
+@mixin green_font {
+    color: #35b558;
+}
+
+@mixin green_bgcolor {
+    background-color: #35b558;
+}
+
+@mixin w100 {
+    width: 100%;
+}
+
+@mixin transition($time) {
+    -webkit-backface-visibility: hidden;
+    -webkit-transition: $time;
+    -moz-backface-visibility: hidden;
+    -moz-transition: $time;
+    -ms-backface-visibility: hidden;
+    -ms-transition: $time;
+    backface-visibility: hidden;
+    transition: $time;
+}
+
+@mixin border-radius($border-radius) {
+    -webkit-border-radius: $border-radius;
+    -moz-border-radius: $border-radius;
+    -ms-border-radius: $border-radius;
+    border-radius: $border-radius;
+}
+
+@mixin transform-rotateY($degree) {
+    -webkit-transform: rotateY($degree);
+    -moz-transform: rotateY($degree);
+    -ms-transform: rotateY($degree);
+    transform: rotateY($degree);
+}
+
+@mixin box-shadow($shadows) {
+    -moz-box-shadow: $shadows;
+    -webkit-box-shadow: $shadows;
+    -ms-box-shadow: $shadows;
+    box-shadow: $shadows;
+}

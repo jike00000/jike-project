@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Score</title>
+    <style type="text/css">
+    .con {
+        width: 1000px;
+        margin: 0 auto;
+        margin-top: 100px;
+        text-align: center;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="con">
+        <input type="text" id="stuScore" placeholder="输入学生成绩">
+        <button onclick="checkScore()">Check Score</button>
+        <p id="demo"></p>
+    </div>
+    <script type="text/javascript">
+    function checkScore() {
+        var text, score;
+        var score = document.getElementById('stuScore').value;
+        if (Number.isInteger(score) && 0 <= score <= 100) {
+            switch (parseInt(score / 10)) {
+                case 9 & 10:
+                    text = "1等生";
+                    break;
+                case 8:
+                    text = "2等生";
+                    break;
+                case 7:
+                    text = "3等生";
+                    break;
+                case 6:
+                    text = "4等生";
+                    break;
+                case 5:
+                    text = "5等生";
+                    break;
+                case 4:
+                    text = "6等生";
+                    break;
+                case 3:
+                    text = "7等生";
+                    break;
+                case 2:
+                    text = "8等生";
+                    break;
+                case 1:
+                    text = "9等生";
+                    break;
+                case 0:
+                    text = "10等生";
+                    break;
+                default:
+                    text = "输入无效";
+                    break;
+            }
+        } else {
+            text = "输入无效";
+        }
+        // var score = parseInt(document.getElementById('stuScore').value / 10);
+
+        document.getElementById("demo").innerHTML = text;
+    }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+.learn-card a {
+    width: 20%;
+    border: $border {
+        right: 0;
+    }
+    float: left;
+    text-align: center;
+    display: block;
+    height: 300px;
+    overflow: hidden;
+    img {
+        margin-bottom: 24px;
+        vertical-align: middle;
+    }
+    h2 {
+        font-size: 15px;
+        color: #333;
+        margin-bottom: 20px;
+        height: 18px;
+        overflow: hidden;
+        font-weight: 400px;
+    }
+    p {
+        font-size: 12px;
+        color: $gray;
+        line-height: 20px;
+        height: 20px;
+        width: 199px;
+        overflow: hidden;
+    }
+    .greenbtn2 {
+        width: 140px;
+        height: 34px;
+        line-height: 34px;
+        text-align: center;
+        margin-top: 20px;
+        cursor: pointer;
+        outline: 0;
+    }
+    &:last-child {
+        border-right: $border;
+    }
+    &:hover .greenbtn2 {
+        background: $green;
+        color: $white;
+        outline: 0;
+    }
+}

@@ -1,0 +1,22 @@
+.ques:after {
+    font-family: "Glyphicons Halflings";
+    content: "\e113";
+    float: right;
+    margin-left: 15px;
+}
+
+.ques.collapsed:after {
+    content: "\e114";
+}
+
+pre{
+	font-size: 12px;
+}
+
+li>p{
+	font-size: 16px;
+}
+
+.disc{
+	list-style-type: circle;
+}

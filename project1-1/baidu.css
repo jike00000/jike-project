@@ -1,0 +1,194 @@
+html {
+    height: 100%;
+    overflow-y: auto;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: white;
+    height: 100%;
+    font: 12px arial;
+}
+
+#wrapper {
+    min-width: 810px;
+    height: 100%;
+    min-height: 600px;
+    position: relative;
+}
+
+#head {
+    position: relative;
+    padding-bottom: 0;
+    height: 100%;
+    min-height: 600px;
+    text-align: center;
+}
+
+.s_form {
+    position: relative;
+    top: 38%;
+}
+
+.s_form_wrapper {
+    position: relative;
+    top: -190px;
+}
+
+#form {
+    margin: 20px auto 0;
+    text-align: left;
+    width: 640px;
+    position: relative;
+    padding: 0;
+}
+
+.ipt_wr {
+    border: 1px solid #BDBDBD;
+    border-right: 0px;
+    background: white;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 530px;
+    height: 34px;
+    margin-right: 0;
+    overflow: hidden;
+}
+
+#kw {
+    position: relative;
+    height: 24px;
+    width: 500px;
+    margin: 6px 0 0 7px;
+    padding: 0;
+    background: transparent;
+    border: 0;
+    outline: 0;
+}
+
+.btn_wr {
+    width: auto;
+    height: auto;
+    border-bottom: 1px solid transparent;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.s_btn {
+    width: 100px;
+    height: 36px;
+    margin-left: -3px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    background: #4E6DE9;
+    border-bottom: 1px solid #4E6DE9;
+    outline: medium;
+    border: 0;
+    padding: 0;
+}
+
+#ul {
+    color: white;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 19px 0 5px 0;
+    padding: 0 95px 0 0;
+}
+
+#ul a.nav {
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-left: 20px;
+    line-height: 24px;
+    color: #333;
+}
+
+#ul a:hover {
+    color: blue;
+}
+
+#ul a.bri {
+    position: absolute;
+    right: 10px;
+    width: 60px;
+    height: 23px;
+    float: left;
+    color: white;
+    background: #2C78D8;
+    line-height: 24px;
+    font-size: 13px;
+    text-align: center;
+    overflow: hidden;
+    border-bottom: 1px solid #2C78D8;
+    margin-left: 19px;
+    margin-right: 2px;
+    text-decoration: none;
+}
+
+#ul a.nav2 {
+    font-weight: normal;
+    text-decoration: underline;
+    margin-left: 20px;
+    color: #333;
+}
+
+
+/*
+
+
+#hd{
+    position: relative;
+    padding-bottom: 0;
+    height: 100%;
+    min-height: 600px;
+}
+
+.head {
+    text-align: center;
+    margin: 150px auto;
+    position: relative;
+    padding-bottom: 0;
+}
+
+#u1 {
+    font-size: 14px;
+    right: -10px;
+    color: white;
+    position: absolute;
+    top: 0;
+    margin: 20px 0 5px 0;
+    padding: 0 50px 0 0;
+}
+
+
+
+#ftcon {
+    height: 100px;
+    position: absolute;
+    bottom: 44px;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 0;
+    overflow: hidden;
+}
+
+
+
+
+
+#lh a {
+    margin: 0 10px;
+}
+
+#cp,
+#cp a {
+    color: #666;
+}
+*/

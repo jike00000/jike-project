@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>javascript高级面试题</title>
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h2><strong>前端面试题</strong></h2>
+        <hr>
+        <li>
+            <p>什么闭包,闭包有什么用</p><pre><code>
+    如果一个函数内部引用外部函数的内部变量,
+    当函数执行时,外部函数的执行上下文不会销毁
+    
+    定义在闭包中的函数可以“记忆”它创建时候的环境
+    闭包就是一个函数，捕获作用域内的外部绑定
+
+    *** 任何函数的 function scope 都默认包含 Global作用域
+        所以自由变量如果在Global环境下找到,将不会产生闭包
+            </code></pre>
+        </li>
+        <li>
+            <p>谈谈This对象的理解</p><pre><code>
+    this是js的一个关键字，随着函数使用场合不同，this的值会发生变化。
+    但是有一个总原则，那就是this指的是调用函数的那个对象。
+
+    this一般情况下：是全局对象Global。 作为方法调用，那么this就是指这个对象
+
+    在函数中this到底取何值，是在函数真正被调用执行的时候确定的，函数定义的时候确定不了。
+    因为this的取值是执行上下文环境的一部分，每次调用函数，都会产生一个新的执行上下文环境。
+            </code></pre>
+        </li>
+        <li>
+            <p>new 操作符具体干了什么</p><pre><code>
+     1、创建一个空对象，并且 this 变量引用该对象，同时还继承了该函数的原型。
+     2、属性和方法被加入到 this 引用的对象中。
+     3、新创建的对象由 this 所引用，并且最后隐式的返回 this 。
+
+    var obj  = {};
+    obj.__proto__ = Base.prototype;
+    Base.call(obj);
+            </code></pre>
+        </li>
+        <li>
+            <p>如何对网站的文件和资源进行优化</p><pre><code>
+    文件合并
+    文件最小化/文件压缩
+    使用 CDN 托管
+    缓存的使用（多个域名来提供缓存）
+            </code></pre>
+        </li>
+        <li>
+            <p>javascript数据类型</p><pre><code>
+	基本数据类型:   undefined, number, string, boolean , null
+	复杂数据类型:	object (包含function,array)
+					(object本质上是由一组无序的名值对组成的)
+
+	（1）值类型：undefined, number, string, boolean , null
+		值类型指的是保存在栈内存中的简单数据段，按值访问，操作的是他们实际保存的值
+
+	（2）引用类型：object, function, array
+		引用类型指的是那些保存在堆内存中的对象，
+		意思是，变量中保存的实际上只是一个指针，这个指针执行内存中的另一个位置，
+		由该位置保存对象；引用访问，当查询时，
+		我们需要先从栈中读取内存地址，然后再顺藤摸瓜地找到保存在堆内存中的值
+    
+    按照spec，typeof只是一个运算符，其返回值并不能作为JS类型系统的依据
+        typeof null返回“object”是一个历史错误
+    instanceof运算符用来确定一个对象是否为某个构造函数的实例
+            </code></pre>
+        </li>
+        <li>
+            <p>undefined 和 null 的区别</p><pre><code>
+    null是一个表示"无"的对象，转为数值时为0；
+    null表示空值，即该处的值现在为空。典型用法是：
+        * 作为函数的参数，表示该函数的参数是一个没有任何内容的对象。
+        * 作为对象原型链的终点。
+
+    undefined是一个表示"无"的原始值，转为数值时为NaN。
+    undefined表示不存在值，就是此处目前不存在任何值,还没有定义任何值,典型用法是：
+        * 变量被声明了，但没有赋值时，就等于undefined。
+        * 调用函数时，应该提供的参数没有提供，该参数等于undefined。
+        * 对象没有赋值的属性，该属性的值为undefined。
+        * 函数没有返回值时，默认返回undefined。
+
+    除了下面六个值被转为false，其他值都视为true。
+    undefined ,null ,false ,0 ,NaN ,""(空字符串)
+            </code></pre>
+        </li>
+        <li>
+            <p>对象都是通过构造函数创建的</p><pre><code>
+    构造函数的特点
+
+    * 函数体内部使用了this关键字，代表了所要生成的对象实例。
+    * 生成对象的时候，必需用new命令，调用构造函数。
+
+    var obj = { a: 10, b: 20 };
+
+    等价于
+
+    var obj = new Object();
+    obj.a = 10;
+    obj.b = 20;
+
+    构造函数中prototype对象有一个constructor属性，默认指向prototype对象所在的构造函数
+        function P() {}
+        P.prototype.constructor === P   //true
+    由于constructor属性定义在prototype对象上面，意味着可以被所有实例对象继承
+            </code></pre>
+        </li>
+        <li>
+            <p>prototype和__proto__的区别</p><pre><code>
+    JavaScript的所有对象，都有自己的继承链。
+    也就是说，每个对象都继承另一个对象，该对象称为“原型”（prototype）对象。
+    
+    函数也是一种对象,也是属性的集合
+    javascript默认的给函数一个属性 prototype
+    每个函数都有一个属性叫做prototype,这个prototype的属性值是一个对象
+    默认有一个叫做constructor的属性，指向prototype对象所在的构造函数
+    和__proto__的属性,指向构造函数的prototye
+
+    对象是由Object构造函数通过 new 创建的
+    每个对象都有一个隐藏的属性  "__proto__"，这个属性引用了创建这个对象的函数的prototype
+
+        obj.__proto__=== Object.prototype
+
+    这里的"__proto__"成为“隐式原型”
+
+    自定义函数的__proto__指向的就是Object.prototype
+    但是Object.prototype的__proto__指向的是null
+
+    Object.prototype.__proto__ === null;  
+        Function.prototype.__proto__ === Object.prototype;
+            Function.__proto__ === Function.prototype
+            Object.__proto__ === Function.prototype
+
+    函数是被Function构造的
+            </code></pre>
+        </li>
+        <li>
+            <p>javascript原型链和继承</p><pre><code>
+    访问一个对象的属性时，先在基本属性中查找，如果没有，再沿着__proto__这条链向上找，这就是原型链
+    hasOwnProperty可以判断一个属性到底是基本的还是从原型中找到的
+
+    在JavaScript中，每一个对象都有一个对应的原型对象，被称为prototype对象。
+    定义在原型对象上的所有属性和方法，都能被派生对象继承。这就是JavaScript继承机制
+            </code></pre>
+        </li>
+        <li>
+            <p>什么是__proto__</p><pre><code>
+    javascript默认的给实例对象一个属性__proto__
+    实例对象的__proto__属性指向构造函数（Object或obj.constructor）的prototype属性
+    obj.constructor继承自obj.__proto__.constructor
+
+    获取实例对象obj的原型对象，有三种方法
+    * obj.__proto__
+    * obj.constructor.prototype
+    * Object.getPrototypeOf(obj)
+            </code></pre>
+        </li>
+        <li>
+            <p>函数内部arguments变量有哪些特性,有哪些属性,如何将它转换为数组</p><pre><code>
+    * arguments所有函数中都包含的一个局部变量，是一个类数组对象，对应函数调用时的实参
+    * arguments[index]分别对应函数调用时的实参，并且通过arguments修改实参时会同时修改实参
+    * arguments.length为实参的个数（Function.length表示形参长度）
+    * arguments.callee为当前正在执行的函数本身，使用这个属性进行递归调用时需注意this的变化
+    * arguments.caller为调用当前函数的函数（已被遗弃）
+
+    转换为数组：var args = Array.prototype.slice.call(arguments, 0);
+            </code></pre>
+        </li>
+        <li>
+            <p>javascript有哪些方法定义对象</p><pre><code>
+    * 对象字面量： var obj = {};
+    * 构造函数： var obj = new Object();
+    * Object.create(): var obj = Object.create(Object.prototype);
+            </code></pre>
+        </li>
+        <li>
+            <p>创建ajax过程</p><pre><code>
+    1. 创建XMLHttpRequest对象,也就是创建一个异步调用对象.
+    2. 创建一个新的HTTP请求,并指定该HTTP请求的方法、URL及验证信息.
+    3. 设置响应HTTP请求状态变化的函数.
+    4. 发送HTTP请求.
+    5. 获取异步调用返回的数据.
+    6. 使用JavaScript和DOM实现局部刷新.
+            </code></pre>
+        </li>
+        <li>
+            <p>当在浏览器地址栏输入一个URL后回车，将会发生的事情</p><pre><code>
+    1. 在浏览器地址栏输入网站
+    2. 浏览器查找域名的IP地址
+    3. 浏览器给web服务器发送一个HTTP请求
+    4. web服务的永久重定向响应
+    5. 浏览器跟踪重定向地址
+    6. 服务器"处理"请求
+    7. 服务器发回一个HTML响应
+    8. 浏览器开始显示HTML
+    9. 浏览器发送获取嵌入在HTML中的对象
+    10. 浏览器发送异步（AJAX）请求
+            </code></pre>
+        </li>
+    </div>
+</body>
+
+</html>

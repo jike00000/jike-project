@@ -1,0 +1,19 @@
+#header {
+    min-height: 70px;
+    margin: 0 auto;
+    padding: 10px 0;
+    width: 1000px;
+    .logo {
+        float: left;
+        width: 113px;
+        margin-top: 5px;
+    }
+    .loginbox {
+        float: right;
+        text-align: right;
+        line-height: 50px;
+        font-size: 12px;
+        color: #333;
+        display: inline-block;
+    }
+}

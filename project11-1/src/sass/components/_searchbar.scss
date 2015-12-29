@@ -1,0 +1,30 @@
+.search {
+    width: 380px;
+    height: 38px;
+    position: absolute;
+    left: 50%;
+    margin-left: -190px;
+    border: $border;
+    margin-top: 5px;
+    .search-text {
+        @include w100;
+        border: 0;
+        outline: medium;
+        height: 36px;
+        padding-left: 15px;
+        font-size: 12px;
+        text-align: left;
+        line-height: 18px;
+    }
+    .search-btn {
+        position: absolute;
+        top: -1px;
+        right: -1px;
+        width: 40px;
+        height: 38px;
+        cursor: pointer;
+        border: 1px solid #dfdfdf;
+        color: $gray;
+        background: url(../img/topsearch-icon.png) center center no-repeat;
+    }
+}

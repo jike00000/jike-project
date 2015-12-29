@@ -1,0 +1,30 @@
+//sass工具
+@import 'utils/variables';
+@import 'utils/mixin';
+
+//样式重置
+@import 'base/reset';
+
+//布局
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/pager';
+
+//组件
+@import 'components/buttons';
+@import 'components/card-transform';
+@import 'components/clearfix';		
+@import 'components/contentin';
+@import 'components/index-title';
+@import 'components/informations';
+@import 'components/learn-card';
+@import 'components/lesson-show';
+@import 'components/loading';
+@import 'components/nav';
+@import 'components/photoscroll';
+@import 'components/searchbar';
+@import 'components/sidebar';
+
+
+
+

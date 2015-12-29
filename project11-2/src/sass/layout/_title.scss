@@ -1,0 +1,42 @@
+.title {
+    position: relative;
+    width: 600px;
+    letter-spacing: 5px;
+    .address {
+        position: absolute;
+        right: -50px;
+        top: 0;
+        color: $red;
+        font-size: 50px;
+        font-weight: 600;
+    }
+    .info {
+        color: $green;
+        font-size: 35px;
+        position: absolute;
+        right: -200px;
+        top: 78px;
+        span {
+            display: inline-block;
+            width: 45px;
+            height: 3px;
+            background-color: $green;
+            margin-left: 5px;
+            vertical-align: middle;
+            &:first-child {
+                margin-left: 45px;
+            }
+            &:last-child {
+                margin-right: 50px;
+            }
+        }
+    }
+    .next {
+        position: absolute;
+        right: -50px;
+        top: 140px;
+        font-weight: 600;
+        font-size: 30px;
+        color: $black;
+    }
+}

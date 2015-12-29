@@ -1,0 +1,37 @@
+.jkinfor-block {
+    border: {
+        top: $border;
+        bottom: $border;
+    }
+    background: $light-gray;
+    .jkinfor {
+        width: 1000px;
+        margin: 0 auto;
+        min-height: 200px;
+        dl {
+            width: 185px;
+            padding-left: 30px;
+            color: $gray;
+            margin: 25px 0;
+            float: left;
+            border-left: $border;
+            min-height: 175px;
+            dt {
+                font-size: 14px;
+                color: #666;
+                font-weight: 500;
+            }
+            dd {
+                font-size: 12px;
+                margin-top: 10px;
+            }
+        }
+        a {
+            color: $gray;
+            padding-left: 5px;
+            &:hover {
+                color: $green;
+            }
+        }
+    }
+}

@@ -1,0 +1,191 @@
+html {
+    height: 100%;
+    overflow-y: auto;
+}
+
+body,
+p,
+form,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    background: white;
+    height: 100%;
+    font: 12px arial;
+}
+
+#wrapper {
+    min-width: 810px;
+    height: 100%;
+    min-height: 600px;
+    position: relative;
+}
+
+#head {
+    position: relative;
+    padding-bottom: 0;
+    height: 100%;
+    min-height: 600px;
+    text-align: center;
+}
+
+.s_form {
+    position: relative;
+    top: 38%;
+}
+
+.s_form_wrapper {
+    position: relative;
+    top: -190px;
+}
+
+#form {
+    margin: 20px auto 0;
+    text-align: left;
+    width: 640px;
+    position: relative;
+    padding: 0;
+}
+
+.ipt_wr {
+    border: 1px solid #BDBDBD;
+    border-right: 0px;
+    background: white;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 530px;
+    height: 34px;
+    margin-right: 0;
+    overflow: hidden;
+}
+
+#kw {
+    position: relative;
+    height: 24px;
+    width: 500px;
+    margin: 6px 0 0 7px;
+    padding: 0;
+    background: transparent;
+    border: 0;
+    outline: 0;
+}
+
+.btn_wr {
+    width: auto;
+    height: auto;
+    border-bottom: 1px solid transparent;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.s_btn {
+    width: 100px;
+    height: 36px;
+    margin-left: -3px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    background: #3385ff;
+    border-bottom: 1px solid #3385ff;
+    outline: medium;
+    border: 0;
+    padding: 0;
+}
+
+.s_btn:hover{
+    background: #317ef3;
+    border-bottom: 1px solid #2868c8;
+    box-shadow: 1px 1px 1px #ccc;
+}
+
+#ul {
+    color: white;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 19px 0 5px 0;
+    padding: 0 30px 0 0;
+}
+
+#ul a.nav {
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-left: 18px;
+    line-height: 24px;
+    color: #333;
+}
+
+#ul a.nav2 {
+    font-size: 13px;
+    text-decoration: underline;
+    margin-left: 18px;
+    line-height: 24px;
+    color: #333;
+}
+
+#ul a:hover {
+    color: blue;
+}
+
+#ul a.nav2:hover {
+    color: blue;
+}
+
+#ul a.bri {
+    display: inline-block;
+    right: 10px;
+    width: 60px;
+    height: 23px;
+    color: white;
+    background: #3385ff;
+    line-height: 24px;
+    font-size: 13px;
+    text-align: center;
+    border-bottom: 1px solid #3385ff;
+    margin-left: 19px;
+    margin-right: 2px;
+    text-decoration: none;
+}
+
+#ftcon {
+    height: 100px;
+    position: absolute;
+    bottom: 44px;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 0;
+    overflow: hidden;
+}
+
+#lh{
+    margin: 16px 0 5px;
+}
+
+#lh a {
+    margin: 0 10px;
+}
+
+#cp,
+#cp a {
+    color: #666;
+}
+
+.c-icon-icrlogo {
+    width: 14px;
+    height: 17px;
+    display: inline-block;
+    overflow: hidden;
+    background: url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/img/icons_45de3f02.png) no-repeat;
+    background-position: -600px -96px;
+    position: relative;
+    top: 3px;
+}

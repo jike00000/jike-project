@@ -1,0 +1,63 @@
+.index-banner {
+    width: 570px;
+    height: 307px;
+    float: left;
+    margin-left: 10px;
+    background: #ccc;
+    border: $border;
+    border-right: 0;
+    position: relative;
+}
+
+.img-li-float {
+    float: left
+}
+
+#box ul {
+    z-index: 2;
+}
+
+.banner-ico-box {
+    position: absolute;
+    left: 0;
+    bottom: 15px;
+    @include w100;
+    text-align: center;
+    z-index: 4;
+    a {
+        width: 39px;
+        height: 10px;
+        display: inline-block;
+        background: url(../img/swiper1.jpg) center center no-repeat;
+        margin: 0 6px;
+    }
+    .active {
+        width: 39px;
+        height: 10px;
+        display: inline-block;
+        background: url(../img/swiper2.jpg) center center no-repeat;
+    }
+}
+
+%banner-btn {
+    z-index: 3;
+    width: 40px;
+    height: 50px;
+    display: none;
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    cursor: pointer;
+}
+
+.banner-left-btn {
+    @extend %banner-btn;
+    background: url(../img/banner-left.png) -10px -5px no-repeat;
+    left: 0;
+}
+
+.banner-right-btn {
+    @extend %banner-btn;
+    background: url(../img/banner-right.png) -10px -5px no-repeat;
+    right: 0;
+}

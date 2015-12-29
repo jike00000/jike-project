@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+    <div id="calculator">
+        <div class="top">
+            <!-- 清除键 -->
+            <span class="clear" onclick="clearVal()">C</span>
+            <span class="clear" onclick="clearLastChar()">←</span>
+            <!-- 输入框 -->
+            <div class="screen"></div>
+        </div>
+        <!-- 按键 -->
+        <div class="keys">
+            <!-- 数字键 -->
+            <span onclick="key('7')">7</span>
+            <span onclick="key('8')">8</span>
+            <span onclick="key('9')">9</span>
+            <!-- 操作键 -->
+            <span class="operator" onclick="operate(' + ')">+</span>
+            <span class="math" onclick="sinVal()">sin</span>
+            <span onclick="key('4')">4</span>
+            <span onclick="key('5')">5</span>
+            <span onclick="key('6')">6</span>
+            <span class="operator" onclick="operate(' - ')">-</span>
+            <span class="math" onclick="cosVal()">cos</span>
+            <span onclick="key('1')">1</span>
+            <span onclick="key('2')">2</span>
+            <span onclick="key('3')">3</span>
+            <span class="operator" onclick="operate(' / ')">÷</span>
+            <span class="math" onclick="square()">x²</span>
+            <span onclick="key('0')">0</span>
+            <span onclick="point()">.</span>
+            <!-- 计算键 -->
+            <span class="eval" onclick="count()">=</span>
+            <span class="operator" onclick="operate(' * ')">×</span>
+            <span class="math" onclick="sqrt1()">√x</span>
+        </div>
+    </div>
+    <!-- <script src="javascript/script.js"></script> -->
+    <script src="javascript/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.wrap {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -webkit-perspective: 1200px;
+}
+
+.cube {
+    height: 300px;
+    width: 300px;
+    transform-origin: 50% 50%;
+    -webkit-transform-style: preserve-3d;
+    -webkit-animation: cube 20s infinite ease-in-out;
+}
+
+.side {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: inset 0 0 30px rgba(125, 125, 125, 0.8);
+    font-size: 24px;
+    text-align: center;
+    line-height: 300px;
+    color: rgba(0, 0, 0, 0.5);
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+
+.one {
+    -webkit-transform: translateZ(150px);
+}
+
+.two {
+    -webkit-transform: rotateY(90deg) translateZ(150px);
+}
+
+.three {
+    -webkit-transform: rotateY(180deg) translateZ(150px);
+}
+
+.four {
+    -webkit-transform: rotateY(-90deg) translateZ(150px);
+}
+
+.five {
+    -webkit-transform: rotateX(90deg) translateZ(150px);
+}
+
+.six {
+    -webkit-transform: rotateX(-90deg) translateZ(150px);
+}
+
+@keyframes cube {
+    from,
+    to 0% {
+        transform: rotateX(0deg);
+    }
+    25% {
+        transform: rotateX(360deg);
+    }
+    50% {
+        transform: rotateY(0deg);
+    }
+    75% {
+        transform: rotateY(360deg);
+    }
+}

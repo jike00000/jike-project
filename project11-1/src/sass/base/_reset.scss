@@ -1,0 +1,20 @@
+$fontStack: Verdana, "Lantinghei SC", "Hiragino Sans GB", "Microsoft Yahei", Helvetica, arial, \5b8b\4f53, sans-serif;
+
+body, button, h2, h5, a, dd, div, dl, i, img, input, li, p, span, ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $fontStack;
+}
+
+a {
+    text-decoration: none;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+button {
+    border: 0 none;
+}

@@ -1,0 +1,59 @@
+#footer {
+    min-width: 1000px;
+    margin-top: 50px!important;  
+}
+
+.search-share {
+    width: 260px;
+    float: left;
+    min-height: 226px;
+    border-left: $border;
+    padding: 20px 0 0 40px;
+    .app-download {
+        img {
+            display: block;
+            float: left;
+            margin-right: 15px;
+        }
+        strong {
+            font-size: 18px;
+            color: $gray;
+            margin-bottom: 8px;
+        }
+        p {
+            font-size: 14px;
+            color: $gray;
+            background: url(../img/more-icon.png) 160px center no-repeat;
+            background-size: 7px 13px;
+        }
+        a:hover strong,
+        h5 {
+            color: $green;
+        }
+    }
+}
+
+
+.jktxt {
+    font-size: 15px;
+    color: $green;
+    display: block;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.kefu-online {
+    h5 {
+        color: #666;
+        font-size: 14px;
+        margin-bottom: 2px;
+        line-height: 22px;
+        padding-left: 5px;
+        font-weight: 500;
+    }
+    p {
+        color: $gray;
+        font-size: 12px;
+        padding-left: 5px;
+    }
+}

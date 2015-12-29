@@ -1,0 +1,78 @@
+.card-transform {
+    width: 167px;
+    height: 120px;
+    border: $border {
+        right: 0;
+        bottom: 0;
+    }
+    float: left;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    .front {
+        border-bottom: $border;
+        padding: 15px 0;
+        z-index: 2;
+        @include transform-rotateY(0deg);
+        background-color: $white;
+        img {
+            margin-bottom: 5px;
+            height: 40px;
+            width: 40px;
+            vertical-align: middle;
+            border: 0;
+        }
+        h2 {
+            margin-bottom: 5px;
+            font-size: 15px;
+            color: $black;
+            font-weight: 400;
+        }
+        span {
+            font-size: 14px;
+            color: $green;
+        }
+    }
+    &:hover {
+        .front {
+            @include transform-rotateY(180deg);
+        }
+        .back {
+            @include transform-rotateY(0deg);
+        }
+    }
+}
+
+.card-transform .back {
+    padding-top: 30px;
+    @include transform-rotateY(-180deg);
+    background-color: $light-gray;
+    strong {
+        display: block;
+        font-size: 14px;
+        color: $gray;
+        margin-bottom: 10px;
+        font-weight: 400;
+    }
+    .greenbtn {
+        font-size: 16px;
+        color: $white;
+        text-align: center;
+        @include border-radius(inherit);
+        width: 140px;
+        height: 36px;
+        cursor: pointer;
+        background: $green;
+    }
+}
+
+.card-transform .back,
+.card-transform .front {
+    border-bottom: $border;
+    width: 167px;
+    height: 120px;
+    @include transition(.6s);
+    position: absolute;
+    left: 0;
+    top: 0;
+}

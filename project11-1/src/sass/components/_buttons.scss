@@ -1,0 +1,14 @@
+.greenbtn3 {
+    display: inline-block;
+    color: $white;
+    background: $light-green;
+}
+
+.greenbtn2 {
+    display: inline-block;
+    color: $green;
+    background: $green-white;
+    border: 1px solid $green;
+    transition-duration: .8s;
+    transform: translateZ(0);
+}

@@ -1,0 +1,53 @@
+body {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 0;
+    background-image: url(http://www.qdjj.net/images/beijing.gif);
+}
+
+td {
+    font-size: 12px;
+    line-height: 150%;
+    text-decoration: none;
+}
+
+a:link {
+    text-decoration: none;
+    color: #333;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #c00;
+}
+
+.titleinfo {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.link:link {
+    font-size: 12px;
+    text-decoration: underline;
+    color: #00c;
+}
+
+.link:hover {
+    font-size: 12px;
+    text-decoration: underline;
+    color: #f00;
+}
+
+.blue {
+    color: #00f;
+}
+
+.p13 {
+    font-size: 13px;
+    line-height: 150%;
+}

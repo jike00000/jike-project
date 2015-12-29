@@ -1,0 +1,20 @@
+.triangle {
+    position: absolute;
+    right: -100px;
+    top: -12px;
+    float: left;
+    padding-top: 0;
+    overflow: hidden;
+    display: block;
+    width: 0;
+    height: 0;
+    border-right: 100px solid transparent;
+    border-bottom: 27px solid $red;
+}
+
+.arrow {
+    position: relative;
+    width: 600px;
+    height: 15px;
+    background-color: $red;
+}

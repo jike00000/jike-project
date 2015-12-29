@@ -1,0 +1,116 @@
+.lesson-nav {
+    position: relative;
+    width: 210px;
+    height: 307px;
+    float: left;
+    border: {
+        top: $greenborder;
+        right: 0;
+    }
+    ul {
+        position: absolute;
+        width: 210px;
+        height: 302px;
+        border: $border;
+        overflow: hidden;
+    }
+    a {
+        color: #333;
+        &:hover {
+            color: $green;
+        }
+    }
+    li>div {
+        width: 208px;
+        height: 37px;
+        line-height: 37px;
+        font-size: 13px;
+        border-bottom: 1px solid $light-gray;
+        background: $white url(../img/more-icon.png) 186px center no-repeat;
+        cursor: pointer;
+        font-weight: 400;
+        background-size: 6px 10px;
+        padding: 0 15px;
+        &:hover {
+            color: #333;
+            border: {
+                top: $border;
+                bottom: $border;
+                left: $greenborder;
+                right: 3px solid $white;
+            }
+            margin-left: -2px;
+            height: 38px;
+            margin-top: -1px;
+            padding-left: 18px;
+            width: 213px;
+            background: $white;
+            box-shadow: 1px 1px 2px rgba(0, 0, 0, .1);
+            .lesson-list-show {
+                display: block;
+            }
+        }
+    }
+    .line {
+        position: absolute;
+        height: 9px;
+        width: 210px;
+        background: $light-gray url(../img/alt-d.png) center center no-repeat;
+        background-size: 7px 3px;
+        bottom: 0;
+        border: $border;
+        border-top: 0;
+        z-index: 2;
+    }
+}
+
+.lesson_right {
+    width: 210px;
+    float: left;
+    border: $border;
+    height: 307px;
+    overflow: hidden;
+    .free-box {
+        height: 153px;
+        border-bottom: $border;
+        a {
+            padding: 20px;
+            display: block;
+        }
+        h2 {
+            font-size: 15px;
+            color: $gray;
+            font-weight: 400;
+            margin: 0;
+        }
+        p {
+            color: $green;
+            font-size: 12px;
+            margin: 15px auto;
+            line-height: 1.8;
+            span {
+                padding: 5px;
+                &:nth-child(1) {
+                    padding-left: 0;
+                }
+            }
+        }
+    }
+}
+
+.lesson_right .free-box button {
+    width: 168px;
+    height: 34px;
+    font-size: 14px;
+    line-height: 34px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-color: $light-green;
+    outline: 0;
+    transition: border-color 1s, background 1s;
+    &:hover {
+        background: $green;
+        color: $white;
+        border-color: $green;
+    }
+}

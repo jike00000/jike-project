@@ -1,0 +1,56 @@
+.navpostion {
+    height: 42px;
+    @include w100;
+}
+
+#navbox {
+    @include box-shadow(rgba(0, 0, 0, .1) 0 1px 5px)
+}
+
+.nav {
+    height: 42px;
+    position: relative;
+    margin: 0 auto;
+    width: 1000px;
+    a {
+        display: inline-block;
+        font-size: 14px;
+        color: $black;
+        line-height: 44px;
+        padding: 0 22px;
+        &:nth-child(1) {
+            padding: 0;
+            margin-right: 22px;
+        }
+    }
+}
+
+.user-need {
+    height: 44px;
+    position: absolute;
+    overflow: hidden;
+    right: 0;
+    top: 0;
+    font-size: 12px;
+    line-height: 44px;
+    span {
+        display: inline-block;
+    }
+    a {
+        font-size: 12px;
+        padding: 0;
+        margin-left: 20px;
+    }
+    img {
+        margin-right: 5px;
+        margin-top: 14px;
+    }
+}
+
+.user-need a:nth-child(1) {
+    margin-right: 0!important;
+}
+
+#navbox .nav a:hover {
+    color: $green;
+}
